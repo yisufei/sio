@@ -16,7 +16,7 @@ func checkErr(err error) {
 func main() {
 	fmt.Println("open the database, sio")
 
-	db, err := sql.Open("mysql", "sio:sio@tcp(127.0.0.1:3306)/sio")
+	db, err := sql.Open("mysql", "sio:sio@tcp(192.168.32.1:3306)/sio")
 	checkErr(err)
 
 	//insert
